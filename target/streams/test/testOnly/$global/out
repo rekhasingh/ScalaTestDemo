@@ -1,0 +1,111 @@
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.glassbeam.scalatestdemo.LoginGBSpec, org.scalatest.tools.Framework$$anon$1@1ee8e50, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(WebSiteSpec, org.scalatest.tools.Framework$$anon$1@1ee8e50, false, [SuiteSelector])[0m
+org.scalatest.exceptions.TestFailedException: WebElement 'form-login-password' not found.
+	at org.scalatest.selenium.WebBrowser$Query$class.webElement(WebBrowser.scala:2671)
+	at org.scalatest.selenium.WebBrowser$NameQuery.webElement(WebBrowser.scala:2710)
+	at org.scalatest.selenium.WebBrowser$$anonfun$textField$1.apply(WebBrowser.scala:3108)
+	at org.scalatest.selenium.WebBrowser$$anonfun$textField$1.apply(WebBrowser.scala:3108)
+	at org.scalatest.selenium.WebBrowser$class.org$scalatest$selenium$WebBrowser$$tryQueries(WebBrowser.scala:3083)
+	at org.scalatest.selenium.WebBrowser$class.textField(WebBrowser.scala:3108)
+	at com.glassbeam.scalatestdemo.LoginGBSpec.textField(LoginGBSpec.scala:10)
+	at com.glassbeam.scalatestdemo.LoginGBSpec.<init>(LoginGBSpec.scala:20)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at java.lang.Class.newInstance(Class.java:374)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:447)
+	at sbt.TestRunner.runTest$1(TestFramework.scala:84)
+	at sbt.TestRunner.run(TestFramework.scala:94)
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:224)
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:224)
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:212)
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:224)
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:224)
+	at sbt.TestFunction.apply(TestFramework.scala:229)
+	at sbt.Tests$$anonfun$7.apply(Tests.scala:196)
+	at sbt.Tests$$anonfun$7.apply(Tests.scala:196)
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:45)
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:45)
+	at sbt.std.Transform$$anon$4.work(System.scala:64)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18)
+	at sbt.Execute.work(Execute.scala:244)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element with name: form-login-password
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.35.0', revision: '8df0c6bedf70ff9f22c647788f9fe9c8d22210e2', time: '2013-08-17 12:46:41'
+System info: os.name: 'Linux', os.arch: 'i386', os.version: '3.2.0-37-generic-pae', java.version: '1.7.0_45'
+Driver info: driver.version: HtmlUnitDriver
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElementByName(HtmlUnitDriver.java:853)
+	at org.openqa.selenium.By$ByName.findElement(By.java:292)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$5.call(HtmlUnitDriver.java:1404)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$5.call(HtmlUnitDriver.java:1401)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.implicitlyWaitFor(HtmlUnitDriver.java:1094)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:1401)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:419)
+	at org.scalatest.selenium.WebBrowser$Query$class.webElement(WebBrowser.scala:2667)
+	at org.scalatest.selenium.WebBrowser$NameQuery.webElement(WebBrowser.scala:2710)
+	at org.scalatest.selenium.WebBrowser$$anonfun$textField$1.apply(WebBrowser.scala:3108)
+	at org.scalatest.selenium.WebBrowser$$anonfun$textField$1.apply(WebBrowser.scala:3108)
+	at org.scalatest.selenium.WebBrowser$class.org$scalatest$selenium$WebBrowser$$tryQueries(WebBrowser.scala:3083)
+	at org.scalatest.selenium.WebBrowser$class.textField(WebBrowser.scala:3108)
+	at com.glassbeam.scalatestdemo.LoginGBSpec.textField(LoginGBSpec.scala:10)
+	at com.glassbeam.scalatestdemo.LoginGBSpec.<init>(LoginGBSpec.scala:20)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at java.lang.Class.newInstance(Class.java:374)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:447)
+	at sbt.TestRunner.runTest$1(TestFramework.scala:84)
+	at sbt.TestRunner.run(TestFramework.scala:94)
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:224)
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:224)
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:212)
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:224)
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:224)
+	at sbt.TestFunction.apply(TestFramework.scala:229)
+	at sbt.Tests$$anonfun$7.apply(Tests.scala:196)
+	at sbt.Tests$$anonfun$7.apply(Tests.scala:196)
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:45)
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:45)
+	at sbt.std.Transform$$anon$4.work(System.scala:64)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18)
+	at sbt.Execute.work(Execute.scala:244)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+[0m[[31merror[0m] [0mCould not run test com.glassbeam.scalatestdemo.LoginGBSpec: org.scalatest.exceptions.TestFailedException: WebElement 'form-login-password' not found.[0m
+[0m[[0mdebug[0m] [0mSummary for ScalaCheck not available.[0m
+[0m[[0minfo[0m] [0mScalaTest[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 50 seconds, 645 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 1[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
+[0m[[31merror[0m] [0mError: Total 1, Failed 0, Errors 0, Passed 1[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	WebSiteSpec[0m
+[0m[[31merror[0m] [0mError during tests:[0m
+[0m[[31merror[0m] [0m	com.glassbeam.scalatestdemo.LoginGBSpec[0m
+[0m[[31merror[0m] [0m(test:[31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m

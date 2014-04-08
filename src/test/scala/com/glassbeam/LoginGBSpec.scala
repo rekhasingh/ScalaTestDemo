@@ -5,8 +5,8 @@ import org.scalatest.selenium.Firefox
 import org.scalatest.selenium.HtmlUnit
 
 
-class LoginSpec extends FlatSpec  with ShouldMatchers with HtmlUnit  {
-        val host = "http://arubatest31.qatest.com/gb/ui/prod/signin.cgi"
+class LoginSpec extends FlatSpec  with ShouldMatchers with Firefox {
+        val host = "https://qasearch.glassbeam.com/gb/ui/prod/signin.cgi"
 
          "Login Operations" should "be successfull" in{
 

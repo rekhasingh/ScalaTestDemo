@@ -1,4 +1,4 @@
-package com.glassbeam.*
+/*package com.glassbeam.*
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.ShouldMatchers
 import org.scalatest.selenium.Firefox
@@ -36,4 +36,4 @@ class LoginSpec extends FlatSpec  with ShouldMatchers with Firefox {
 
 
 
-  }
+  }*/
